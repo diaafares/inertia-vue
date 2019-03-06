@@ -1,0 +1,11 @@
+{
+  "name": "inertia-vue",
+  "version": "0.1.0",
+  "description": "The Vue adapter for Inertia.",
+  "main": "src/index.js",
+  "author": "Jonathan Reinink",
+  "license": "MIT",
+  "dependencies": {
+    "inertia": "file:../inertia"
+  }
+}
