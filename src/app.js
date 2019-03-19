@@ -13,6 +13,8 @@ export default {
     Inertia.init(this.component, this.props, this.resolveComponent)
   },
   render(h) {
-    return Inertia.render(h)
+    if (this.page.instance) {
+      return h(this.page.instance, { props: this.page.props })
+    }
   }
 }
