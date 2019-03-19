@@ -1,6 +1,7 @@
 import Inertia from 'inertia'
 
 export default {
+  name: 'Inertia',
   props: ['component', 'props', 'resolveComponent'],
   provide() {
     return { page: this.page }
