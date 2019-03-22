@@ -2,12 +2,20 @@ import Inertia from 'inertia'
 
 export default {
   name: 'Inertia',
-  props: ['component', 'props', 'resolveComponent'],
+  props: {
+    component: String,
+    props: Object,
+    resolveComponent: Function,
+  },
   provide() {
-    return { page: this.page }
+    return {
+      page: this.page
+    }
   },
   data() {
-    return { page: Inertia.page }
+    return {
+      page: Inertia.page
+    }
   },
   created() {
     Inertia.init(this.component, this.props, this.resolveComponent)
