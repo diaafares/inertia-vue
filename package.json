@@ -6,7 +6,7 @@
   "author": "Jonathan Reinink",
   "license": "MIT",
   "dependencies": {
-    "inertia": "file:../inertia"
+    "inertia": "inertiajs/inertia"
   },
   "devDependencies": {
     "eslint": "^5.15.3"
