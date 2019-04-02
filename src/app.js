@@ -23,7 +23,7 @@ export default {
   render(h) {
     if (this.page.instance) {
       return h(this.page.instance, {
-        key: location.pathname,
+        key: window.location.pathname,
         props: this.page.props
       })
     }
