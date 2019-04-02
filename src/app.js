@@ -22,7 +22,10 @@ export default {
   },
   render(h) {
     if (this.page.instance) {
-      return h(this.page.instance, { props: this.page.props })
+      return h(this.page.instance, {
+        key: location.pathname,
+        props: this.page.props
+      })
     }
   }
 }
